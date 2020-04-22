@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+% \usepackage{tikz-feynman}
+\usepackage{tikz-feynman}
+\title{feynman}
+\author{frankie.y.liu }
+\date{April 2020}
+
+\begin{document}
+% \maketitle
+% \section{Introduction}
+\begin{figure}
+\centering
+\feynmandiagram [horizontal=a to b] {
+  i1 -- [fermion] a -- [fermion] i2,
+  a -- [photon] b,
+  f1 -- [fermion] b -- [fermion] f2,
+};
+\end{figure}
+\begin{figure}
+    \centering
+    
+    \caption{Caption}
+    \label{fig:my_label}
+\end{figure}
+\end{document}
